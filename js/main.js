@@ -1,15 +1,9 @@
-/* ============================================================
-   main.js — Neumorphic Portfolio Interactions (DARK/LIGHT)
-============================================================ */
-
-// ── THEME TOGGLE (DARK DEFAULT) ────────────────────────────
 (function() {
   const html = document.documentElement;
   const desktopToggle = document.getElementById('desktop-theme-toggle');
   const mobileToggle = document.getElementById('mobile-theme-toggle');
   const toggleThumbs = document.querySelectorAll('.toggle-thumb');
 
-  // DEFAULT: DARK (no system preference check)
   const savedTheme = localStorage.getItem('theme');
   let currentTheme = savedTheme || 'dark';
 
@@ -33,22 +27,16 @@
   if (desktopToggle) desktopToggle.addEventListener('click', toggleTheme);
   if (mobileToggle) mobileToggle.addEventListener('click', toggleTheme);
 
-  // Initial apply — always dark unless user saved light
   setTheme(currentTheme);
 })();
 
-// ── TYPEWRITER EFFECT ──────────────────────────────────────
+
 (function () {
   const roles = [
-    'Software Developer',
-    'Computer Vision Enthusiast',
-    'AI & ML Explorer',
-    'Problem Solver'
+    'CS Student & Developer',
   ];
   const el = document.getElementById('typed-text');
-  let ri = 0,
-    ci = 0,
-    deleting = false;
+  let ri = 0, ci = 0, deleting = false;
 
   function tick() {
     const word = roles[ri];
@@ -73,43 +61,7 @@
   setTimeout(tick, 900);
 })();
 
-// ── PROFILE PHOTO UPLOAD ──────────────────────────────────
-function applyProfilePhoto(file) {
-  if (!file) return;
-  const url = URL.createObjectURL(file);
-  document.getElementById('sidebar-ph').style.display = 'none';
-  const sImg = document.getElementById('sidebar-img');
-  sImg.src = url;
-  sImg.style.display = 'block';
-  document.getElementById('hero-ph').style.display = 'none';
-  const hImg = document.getElementById('hero-img');
-  hImg.src = url;
-  hImg.style.display = 'block';
-}
-document.getElementById('avatar-input').addEventListener('change', function (e) {
-  applyProfilePhoto(e.target.files[0]);
-});
-document.getElementById('hero-avatar-input').addEventListener('change', function (e) {
-  applyProfilePhoto(e.target.files[0]);
-});
 
-// ── CERTIFICATE PHOTO UPLOAD ──────────────────────────────
-function applyCertPhoto(file, index) {
-  if (!file) return;
-  const url = URL.createObjectURL(file);
-  document.getElementById('cert-ph-' + index).style.display = 'none';
-  const img = document.getElementById('cert-img-' + index);
-  img.src = url;
-  img.style.display = 'block';
-}
-document.getElementById('cert-input-1').addEventListener('change', function (e) {
-  applyCertPhoto(e.target.files[0], 1);
-});
-document.getElementById('cert-input-2').addEventListener('change', function (e) {
-  applyCertPhoto(e.target.files[0], 2);
-});
-
-// ── PROJECT CARD 3D TILT ──────────────────────────────────
 document.querySelectorAll('.project-card[data-tilt]').forEach(function (card) {
   card.addEventListener('mousemove', function (e) {
     const rect = card.getBoundingClientRect();
@@ -140,7 +92,6 @@ document.querySelectorAll('.reveal, .reveal-stagger').forEach(function (el) {
   revealObserver.observe(el);
 });
 
-// ── ACTIVE NAV LINK ────────────────────────────────────────
 var sections = document.querySelectorAll('section[id]');
 var navLinks = document.querySelectorAll('.sidebar-nav a');
 var navObserver = new IntersectionObserver(function (entries) {
@@ -156,7 +107,7 @@ sections.forEach(function (s) {
   navObserver.observe(s);
 });
 
-// ── BACK TO TOP ─────────────────────────────────────────────
+
 var backTop = document.getElementById('back-top');
 window.addEventListener('scroll', function () {
   if (window.scrollY > 600) {
@@ -169,7 +120,7 @@ backTop.addEventListener('click', function () {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// ── HAMBURGER MENU ──────────────────────────────────────────
+
 var hamburger = document.getElementById('hamburger');
 var mobileMenu = document.getElementById('mobile-menu');
 
@@ -187,7 +138,7 @@ if (hamburger && mobileMenu) {
   });
 }
 
-// ── REDUCED MOTION SAFETY ──────────────────────────────────
+
 if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   document.querySelectorAll('.project-card[data-tilt]').forEach(function (c) {
     c.style.transition = 'none';

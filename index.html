@@ -4,19 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- ═══ SEO / Social ═══ -->
+  
   <title>Jan Mark T. Tabinas · CS Portfolio</title>
   <meta name="description" content="Computer Science student at University of Mindanao. Building AI, computer vision, and full‑stack projects. Open to internships." />
   <meta property="og:title" content="Jan Mark T. Tabinas · CS Portfolio" />
   <meta property="og:description" content="Computer Science student · AI & CV projects · Open to internships." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://your-domain.com" />
+  <meta property="og:url" content="https://jantabinas12.github.io/my-portfolio/" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- ═══ Favicon ═══ -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>" />
-
-  <!-- ═══ Neumorphism Fonts ═══ -->
+  
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -25,7 +22,7 @@
 </head>
 <body>
 
-  <!-- ─── TACTILE BACKGROUND SCULPTURE ─── -->
+ 
   <div class="bg-sculpture">
     <div class="sculpture-ring ring-1"></div>
     <div class="sculpture-ring ring-2"></div>
@@ -33,14 +30,13 @@
     <div class="sculpture-ring ring-4"></div>
   </div>
 
-  <!-- ─── BACK TO TOP ─── -->
+ 
   <button id="back-top" aria-label="Back to top">↑</button>
 
-  <!-- ─── MOBILE TOPBAR ─── -->
+ 
   <header class="topbar">
     <span class="topbar-name">Jan Mark T. Tabinas</span>
     <div class="topbar-controls">
-      <!-- Theme Toggle for Mobile -->
       <button class="theme-toggle" id="mobile-theme-toggle" aria-label="Toggle theme">
         <div class="toggle-track">
           <span class="toggle-thumb">🌙</span>
@@ -60,16 +56,9 @@
 
   <div class="layout">
 
-    <!-- ─── SIDEBAR ─── -->
+    
     <aside class="sidebar">
-      <div class="sidebar-avatar-wrap" title="Click to upload photo">
-        <div class="sidebar-avatar-placeholder" id="sidebar-ph">JT</div>
-        <img id="sidebar-img" class="sidebar-avatar" style="display:none;" alt="Profile photo" />
-        <div class="sidebar-avatar-overlay">Change</div>
-        <input type="file" accept="image/*" id="avatar-input" />
-      </div>
-
-      <p class="sidebar-name">Jan Mark<br>Tabinas</p>
+      <p class="sidebar-name">Jan Mark Tabinas</p>
       <p class="sidebar-role">CS Student</p>
 
       <ul class="sidebar-nav">
@@ -80,12 +69,12 @@
       </ul>
 
       <div class="sidebar-stats">
-        <div class="sidebar-stat"><span class="sidebar-stat-num">3+</span><span class="sidebar-stat-label">Projects</span></div>
+        <div class="sidebar-stat"><span class="sidebar-stat-num">4+</span><span class="sidebar-stat-label">Projects</span></div>
         <div class="sidebar-stat"><span class="sidebar-stat-num">2</span><span class="sidebar-stat-label">Certs</span></div>
         <div class="sidebar-stat"><span class="sidebar-stat-num">∞</span><span class="sidebar-stat-label">Coffee</span></div>
       </div>
 
-      <!-- Theme Toggle for Desktop -->
+      
       <div class="sidebar-theme-wrapper">
         <button class="theme-toggle" id="desktop-theme-toggle" aria-label="Toggle theme">
           <div class="toggle-track">
@@ -97,14 +86,15 @@
 
       <div class="sidebar-bottom">
         <div class="sidebar-status"><span class="sidebar-status-dot"></span> Open to internships</div>
-        Philippines · 2026
+        <div class="sidebar-location"> Philippines · 2026</div>
+        <div class="sidebar-email"> j.tabinas.536889@umindanao.edu.ph</div>
       </div>
     </aside>
 
-    <!-- ─── MAIN ─── -->
+   
     <main class="main">
 
-      <!-- ═══ HERO ═══ -->
+      
       <section class="hero" id="home">
         <div class="hero-content">
           <div class="hero-eyebrow">
@@ -130,19 +120,40 @@
           </div>
         </div>
 
-        <div class="hero-portrait-wrap">
-          <div class="hero-portrait-frame">
-            <div class="hero-portrait-ph" id="hero-ph">
-              <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-              <span>Add photo</span>
+       
+        <div class="hero-github-card">
+          <div class="hero-github-card-inner neu-card">
+            <div class="hero-github-avatar">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.15 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.62.24 2.85.12 3.15.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
             </div>
-            <img id="hero-img" class="hero-portrait" style="display:none;" alt="Profile photo" />
+            <div class="hero-github-info">
+              <span class="hero-github-username">@jantabinas12</span>
+              <span class="hero-github-bio">CS Student · Builder · Learner</span>
+            </div>
+            <div class="hero-github-stats">
+              <div class="hero-github-stat-item">
+                <span class="hero-github-stat-num">4</span>
+                <span class="hero-github-stat-label">Repos</span>
+              </div>
+              <div class="hero-github-stat-divider"></div>
+              <div class="hero-github-stat-item">
+                <span class="hero-github-stat-num">0</span>
+                <span class="hero-github-stat-label">Followers</span>
+              </div>
+              <div class="hero-github-stat-divider"></div>
+              <div class="hero-github-stat-item">
+                <span class="hero-github-stat-num">0</span>
+                <span class="hero-github-stat-label">Following</span>
+              </div>
+            </div>
+            <a href="https://github.com/jantabinas12" target="_blank" class="hero-github-link btn-primary">
+              View on GitHub
+            </a>
           </div>
-          <input type="file" accept="image/*" id="hero-avatar-input" />
         </div>
       </section>
 
-      <!-- ═══ ABOUT ═══ -->
+      
       <section class="section" id="about">
         <div class="section-header reveal">
           <div class="section-label">
@@ -154,37 +165,39 @@
         <div class="about-grid reveal">
           <div class="about-body">
             <p>
-              Hi! I'm a Computer Science student at the University of Mindanao with a focus on
-              software engineering and computer vision. I turn complex problems into clean,
-              practical solutions that make a difference.
+              I am a Computer Science student with a <strong>foundation in  web development</strong> 
+              and a growing passion for artificial intelligence, while I actively explore 
+              AI/ML concepts like retrieval-augmented generation and deep learning.
             </p>
             <p>
-              Outside of class, I work on personal projects and contribute to research. I'm
-              currently co-developing a thesis on counterfeit medicine detection using deep
-              learning. I'm seeking an internship where I can grow alongside a strong team.
+              I learn best by building real-world applications from e‑commerce platforms 
+              with secure authentication and payment flows to AI‑powered agents that 
+              help students navigate university life. I'm comfortable designing databases, 
+              and crafting clean, responsive user interfaces.
             </p>
             <p>
-              When I'm not coding, I'm probably exploring new tech, gaming, or grabbing coffee.
+              I'm looking for an internship where I can 
+              learn from experienced developers, and continue growing as a developer.
             </p>
             <div class="about-quote">
-              <p>"I build things that solve real problems."</p>
+              <p>"Building things that solve real problems."</p>
             </div>
           </div>
           <div class="about-meta neu-card">
+            <div class="about-meta-row"><p class="about-meta-k">Program</p><p class="about-meta-v">BS Computer Science</p></div>
             <div class="about-meta-row"><p class="about-meta-k">University</p><p class="about-meta-v">University of Mindanao</p></div>
-            <div class="about-meta-row"><p class="about-meta-k">Degree</p><p class="about-meta-v">BS Computer Science</p></div>
             <div class="about-meta-row"><p class="about-meta-k">Year Level</p><p class="about-meta-v">3rd Year · 2026</p></div>
             <div class="about-meta-row"><p class="about-meta-k">Location</p><p class="about-meta-v">Philippines</p></div>
             <div class="about-meta-row"><p class="about-meta-k">Email</p><p class="about-meta-v" style="font-size:12px;word-break:break-all;">j.tabinas.536889@umindanao.edu.ph</p></div>
-            <a class="btn-download" href="#">
+            <a class="btn-download" href="Tabinas-CV.pdf" download>
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-              Download CV
+                Download CV
             </a>
           </div>
         </div>
       </section>
 
-      <!-- ═══ SKILLS ═══ -->
+      
       <section class="section" id="skills">
         <div class="section-header reveal">
           <div class="section-label">
@@ -218,7 +231,7 @@
           <div class="skill-card neu-card">
             <div class="skill-card-header"><span class="skill-card-icon">◈</span><span class="skill-card-label">Concepts</span></div>
             <div class="skill-pills">
-              <span class="pill">OOP</span><span class="pill">REST APIs</span>
+              <span class="pill">OOP</span>
               <span class="pill">Data Structures</span><span class="pill">Computer Vision</span>
               <span class="pill">RAG</span>
             </div>
@@ -226,7 +239,7 @@
         </div>
       </section>
 
-      <!-- ═══ CERTIFICATES ═══ -->
+     
       <section class="section" id="certificates">
         <div class="section-header reveal">
           <div class="section-label">
@@ -236,46 +249,37 @@
           </div>
         </div>
         <div class="certs-grid reveal">
-          <!-- Cert 1 -->
-          <div class="cert-card neu-card">
-            <div class="cert-photo-wrap neu-inset" onclick="document.getElementById('cert-input-1').click()">
-              <div class="cert-photo-placeholder" id="cert-ph-1">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-                <span>Add photo</span>
-              </div>
-              <img id="cert-img-1" class="cert-photo" style="display:none;" alt="Certificate" />
-              <div class="cert-photo-overlay">Change</div>
+
+          <div class="cert-card neu-card" onclick="openCertModal('HTML and CSS', 'Certiport', 'February 28, 2024', 'wwzy6-2Fvm', 'images/cert-html-css.jpg')">
+            <div class="cert-photo-wrap neu-inset">
+              <img src="images/cert-html-css.jpg" class="cert-photo" alt="HTML and CSS Certificate" />
+              <div class="cert-photo-overlay">Click to view</div>
             </div>
-            <input type="file" accept="image/*" id="cert-input-1" style="display:none;" />
             <div class="cert-info">
               <span class="cert-badge">Certiport</span>
-              <p class="cert-name">IC3 Digital Literacy</p>
-              <p class="cert-desc">Foundational computing skills — software, hardware, internet fundamentals.</p>
-              <span class="cert-year">2024</span>
+              <p class="cert-name">HTML and CSS</p>
+              <p class="cert-desc">Validates proficiency in HTML5 and CSS3 — structuring web content, styling layouts, and building responsive web pages.</p>
+              <span class="cert-year">February 28, 2024</span>
             </div>
           </div>
-          <!-- Cert 2 -->
-          <div class="cert-card neu-card">
-            <div class="cert-photo-wrap neu-inset" onclick="document.getElementById('cert-input-2').click()">
-              <div class="cert-photo-placeholder" id="cert-ph-2">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-                <span>Add photo</span>
-              </div>
-              <img id="cert-img-2" class="cert-photo" style="display:none;" alt="Certificate" />
-              <div class="cert-photo-overlay">Change</div>
+
+          <div class="cert-card neu-card" onclick="openCertModal('Databases', 'Certiport', 'May 16, 2025', 'oEET-uSrC', 'images/cert-database.jpg')">
+            <div class="cert-photo-wrap neu-inset">
+              <img src="images/cert-database.jpg" class="cert-photo" alt="Databases Certificate" />
+              <div class="cert-photo-overlay">Click to view</div>
             </div>
-            <input type="file" accept="image/*" id="cert-input-2" style="display:none;" />
             <div class="cert-info">
               <span class="cert-badge">Certiport</span>
-              <p class="cert-name">IT Specialist – Python</p>
-              <p class="cert-desc">Proficiency in Python — data structures, algorithms, OOP.</p>
-              <span class="cert-year">2024</span>
+              <p class="cert-name">Databases</p>
+              <p class="cert-desc">Validates proficiency in database design, SQL queries, data normalization, and database management using MySQL.</p>
+              <span class="cert-year">May 16, 2025</span>
             </div>
           </div>
+
         </div>
       </section>
 
-      <!-- ═══ PROJECTS ═══ -->
+      
       <section class="section" id="projects">
         <div class="section-header reveal">
           <div class="section-label">
@@ -286,70 +290,109 @@
         </div>
         <div class="projects-grid reveal">
 
+          
+          <div class="project-card neu-card" data-tilt>
+            <div class="project-card-top">
+              <span class="project-name">Tinamad Finds — Thrift Store E-Commerce</span>
+              <span class="status-badge done">Completed</span>
+            </div>
+            <p class="project-desc">
+              A full‑stack e‑commerce platform for second‑hand fashion. Features include 
+              user authentication, product browsing, shopping cart, secure checkout, 
+              order management, and an admin dashboard for inventory control. 
+              Built with a modern Next.js‑inspired frontend architecture and robust 
+              PHP backend with MySQL database.
+            </p>
+            <div class="project-tags">
+              <span class="tag">PHP</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">E-Commerce</span>
+            </div>
+            <a href="https://github.com/jantabinas12/tinamad-finds-ecommerce" target="_blank" class="btn-ghost" style="font-size: 11px; padding: 0.3rem 1rem; text-decoration: none; margin-top: 0.8rem; display: inline-flex; align-items: center; gap: 0.4rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.15 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.62.24 2.85.12 3.15.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              View on GitHub
+            </a>
+          </div>
+
+          <!-- Project 2: Hybrid AI Student Assistant -->
           <div class="project-card neu-card" data-tilt>
             <div class="project-card-top">
               <span class="project-name">Hybrid AI Student Assistant</span>
               <span class="status-badge done">Completed</span>
             </div>
             <p class="project-desc">
-              Privacy‑preserving conversational agent using RAG to extract and synthesize
-              information from a 134‑page university handbook.
+              Privacy‑preserving conversational agent using Retrieval-Augmented Generation (RAG) 
+              to extract and synthesize information from a 134‑page university handbook — 
+              giving students instant, accurate answers to academic and admin questions.
             </p>
             <div class="project-tags">
-              <span class="tag">Python</span><span class="tag">LangChain</span>
-              <span class="tag">Chroma DB</span><span class="tag">Ollama</span>
+              <span class="tag">Python</span>
+              <span class="tag">LangChain</span>
+              <span class="tag">Chroma DB</span>
+              <span class="tag">Ollama</span>
+              <span class="tag">Streamlit</span>
             </div>
+            <a href="https://github.com/jantabinas12/student-assistant" target="_blank" class="btn-ghost" style="font-size: 11px; padding: 0.3rem 1rem; text-decoration: none; margin-top: 0.8rem; display: inline-flex; align-items: center; gap: 0.4rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.15 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.62.24 2.85.12 3.15.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              View on GitHub
+            </a>
           </div>
 
+          
           <div class="project-card neu-card" data-tilt>
             <div class="project-card-top">
-              <span class="project-name">Counterfeit Medicine Detection</span>
-              <span class="status-badge wip">In Progress</span>
-            </div>
-            <p class="project-desc">
-              Thesis research using deep learning (CNN) to classify pharmaceutical pills from images.
-              Aims to provide a low‑cost tool for pharmacies and consumers.
-            </p>
-            <div class="project-tags">
-              <span class="tag">Python</span><span class="tag">TensorFlow</span>
-              <span class="tag">OpenCV</span><span class="tag">Flask</span>
-            </div>
-          </div>
-
-          <div class="project-card neu-card" data-tilt>
-            <div class="project-card-top">
-              <span class="project-name">Campus Event Scheduler</span>
+              <span class="project-name">Davao City Tourist Spots</span>
               <span class="status-badge done">Completed</span>
             </div>
             <p class="project-desc">
-              Full‑stack web app for student organizations to book rooms and manage events.
-              Features real‑time conflict detection and calendar integration.
+              A fully responsive, interactive tourism website showcasing Davao City's iconic 
+              destinations — Eden's Park, Museo Dabawenyo, Mount Apo, and People's Park. 
+              Features glassmorphism cards, interactive modals, scroll reveal animations, 
+              and a dynamic typing effect.
             </p>
             <div class="project-tags">
-              <span class="tag">PHP</span><span class="tag">Laravel</span>
-              <span class="tag">MySQL</span><span class="tag">Tailwind CSS</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">UI/UX</span>
+              <span class="tag">Responsive</span>
             </div>
+            <a href="https://github.com/jantabinas12/davao-tourist" target="_blank" class="btn-ghost" style="font-size: 11px; padding: 0.3rem 1rem; text-decoration: none; margin-top: 0.8rem; display: inline-flex; align-items: center; gap: 0.4rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.15 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.62.24 2.85.12 3.15.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              View on GitHub
+            </a>
           </div>
 
+         
           <div class="project-card neu-card" data-tilt>
             <div class="project-card-top">
-              <span class="project-name">Portfolio Website (This)</span>
+              <span class="project-name">Portfolio Website</span>
               <span class="status-badge done">Completed</span>
             </div>
             <p class="project-desc">
               A fully responsive, Neumorphic personal portfolio showcasing my projects,
-              skills, and certificates with modern UI/UX principles.
+              skills, and certificates with modern UI/UX principles and dark/light mode.
+              Built from scratch with vanilla HTML, CSS, and JavaScript.
             </p>
             <div class="project-tags">
-              <span class="tag">HTML</span><span class="tag">CSS</span>
-              <span class="tag">JavaScript</span><span class="tag">UI/UX</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">UI/UX</span>
             </div>
+            <a href="https://github.com/jantabinas12/my-portfolio" target="_blank" class="btn-ghost" style="font-size: 11px; padding: 0.3rem 1rem; text-decoration: none; margin-top: 0.8rem; display: inline-flex; align-items: center; gap: 0.4rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.15 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.62.24 2.85.12 3.15.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              View on GitHub
+            </a>
           </div>
 
         </div>
       </section>
 
-      <!-- ═══ FOOTER ═══ -->
+     
       <footer class="footer">
         <div class="footer-left">
           <p class="name">Jan Mark T. Tabinas</p>
@@ -364,6 +407,76 @@
     </main>
   </div>
 
+  
+  <div class="cert-modal" id="certModal" onclick="closeCertModal(event)">
+    <div class="cert-modal-content neu-card" onclick="event.stopPropagation()">
+      <button class="cert-modal-close" onclick="closeCertModal()">✕</button>
+      <div class="cert-modal-body">
+        <div class="cert-modal-image-wrap">
+          <img id="modal-cert-image" src="" alt="Certificate" class="cert-modal-image" />
+        </div>
+        <div class="cert-modal-logo">
+          <span class="cert-badge" id="modal-badge">Certiport</span>
+        </div>
+        <h2 class="cert-modal-title" id="modal-title">HTML and CSS</h2>
+        <div class="cert-modal-student">
+          <span class="cert-modal-label">Awarded to</span>
+          <p class="cert-modal-name">Jan Mark T. Tabinas</p>
+        </div>
+        <div class="cert-modal-details">
+          <div class="cert-modal-row">
+            <span class="cert-modal-label">Issuer</span>
+            <span class="cert-modal-value" id="modal-issuer">Certiport</span>
+          </div>
+          <div class="cert-modal-row">
+            <span class="cert-modal-label">Date Issued</span>
+            <span class="cert-modal-value" id="modal-date">February 28, 2024</span>
+          </div>
+          <div class="cert-modal-row">
+            <span class="cert-modal-label">Verification Code</span>
+            <span class="cert-modal-value cert-modal-code" id="modal-code">wwzy6-2Fvm</span>
+          </div>
+        </div>
+        <div class="cert-modal-footer">
+          <div class="cert-modal-brands">
+            <span>Certiport</span>
+            <span>Pearson</span>
+          </div>
+          <a href="#" class="cert-modal-verify" id="modal-verify-link" target="_blank">
+            verify.certiport.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="js/main.js"></script>
+  <script>
+    
+    function openCertModal(title, issuer, date, code, imageSrc) {
+      document.getElementById('modal-title').textContent = title;
+      document.getElementById('modal-issuer').textContent = issuer;
+      document.getElementById('modal-date').textContent = date;
+      document.getElementById('modal-code').textContent = code;
+      document.getElementById('modal-badge').textContent = issuer;
+      document.getElementById('modal-cert-image').src = imageSrc;
+      document.getElementById('modal-verify-link').href = 'https://verify.certiport.com/' + code;
+      document.getElementById('certModal').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeCertModal(event) {
+      if (event && event.target !== event.currentTarget && !event.target.closest('.cert-modal-content')) return;
+      document.getElementById('certModal').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        document.getElementById('certModal').classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+  </script>
 </body>
 </html>
