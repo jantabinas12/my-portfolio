@@ -125,7 +125,6 @@ body {
   }
 }
 
-
 .neu-card {
   background: var(--bg);
   border-radius: var(--radius-card);
@@ -453,7 +452,7 @@ body {
   box-shadow: 4px 4px 8px var(--shadow-dark-strong), -4px -4px 8px var(--shadow-light);
 }
 
-/* ── SIDEBAR BOTTOM ── */
+
 .sidebar-bottom {
   font-size: 11px;
   color: var(--text-muted);
@@ -628,7 +627,7 @@ body {
   }
 }
 
-/* ── HERO GITHUB CARD ── */
+
 .hero-github-card {
   flex-shrink: 0;
   z-index: 2;
@@ -1196,7 +1195,6 @@ body {
   }
 }
 
-
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1349,7 +1347,6 @@ body {
   transform: translateY(1px);
 }
 
-/* ── 17. REVEAL ANIMATIONS ────────────────────────────────── */
 .reveal {
   opacity: 0;
   transform: translateY(24px);
